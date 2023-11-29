@@ -6,7 +6,6 @@ const API_URL = 'http://www.omdbapi.com/?i=tt3896198&apikey=873f94a8';
  
 const Home = () => {
     const [movies, setMovies] = useState([]);
-    const [searchTerm, setSearchTerm] = useState('');
 
     const searchMovies = async (title) => {
         const response = await fetch(`${API_URL}&s=${title}`);
@@ -18,12 +17,6 @@ const Home = () => {
         searchMovies('christmas');
       }, []);
 
-    const filterMoviesByYear = (year) => {
-        const filteredMovies = movies.filter((movie) =>
-          movie.Year.includes(year.toString())
-        );
-        setMovies(filteredMovies);
-      };
 
     return (
         <>

@@ -1,5 +1,3 @@
-
-
 import "../styles/app.css";
 import {useEffect, useState} from 'react';
 import SearchIcon from '../assets/search.svg';
