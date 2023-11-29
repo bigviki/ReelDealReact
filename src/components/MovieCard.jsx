@@ -1,4 +1,5 @@
 import React from 'react';
+import Info from '../pages/Info';//
 
 const MovieCard = ({movie}) => {
     return (
