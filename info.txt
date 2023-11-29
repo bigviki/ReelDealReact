@@ -1,0 +1,16 @@
+PROJECT INFO:
+    JS library: react
+    Framework: CRA (create react app)
+
+EDITOR SETUP:
+install react extension
+        nodejs extension
+        create react app extension 
+        preview.js extension
+        ESlint extension
+        
+HOW TO USE REACT:
+https://react.dev/learn
+npm start : runs application on local host 3000
+
+
