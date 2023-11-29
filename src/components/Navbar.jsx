@@ -23,6 +23,9 @@ const Navbar = () => {
             <NavLink to="/Search" activeStyle>
                 Search
             </NavLink>
+            <NavLink to="/Info" activeStyle>
+                Info
+            </NavLink>
            </NavMenu>
            
             <NavBtn>
