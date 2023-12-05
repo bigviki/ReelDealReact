@@ -1,11 +1,13 @@
 import InfoCard from'../components/InfoCard'
+import ReviewContainer from '../components/ReviewContainer';
 
 const Info = () => {
     return (
         <>
-            <InfoCard />
             <div className="app">
-                <h2>info page</h2>
+                <h3>'Movie Name'</h3>
+                <InfoCard />
+                <ReviewContainer />
             </div>
         </>
     );

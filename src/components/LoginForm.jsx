@@ -1,11 +1,14 @@
 import {useState} from 'react';
-
+import { useNavigate } from 'react-router-dom';
+import Home from '../pages/Home';
 
 const LoginForm = () => {
 
     //React States
         const [errorMessages, setErrorMessages] = useState({});
         const [isSubmitted, setIsSubmitted] = useState(false);
+        const navigate = useNavigate();
+
     // User Login info
     const database = [
         {username: "user1",
@@ -69,12 +72,15 @@ const LoginForm = () => {
     </div>
   );
   return (
-        <div className="app">
-          <div className="login-form">
-            <div className="title">Sign In</div>
-            {isSubmitted ? <h1>yoohoo</h1> : renderForm}
-          </div>
-        </div>
-      );
+    <>
+       <div className="app">
+           <div className="login-form">
+             <div className="title">Sign In</div>
+             {isSubmitted ? <h1>yoohoo</h1> : renderForm}
+           </div>
+         </div>
+    </>
+      
+    );
 }
 export default LoginForm;

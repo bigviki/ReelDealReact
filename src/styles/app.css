@@ -55,6 +55,9 @@ input[type="submit"]:hover {
   margin: 10px;
 }
 /* ////////////////////////////////////////////////////////// */
+html{
+  background-color:rgb(38, 38, 38);
+}
 * {
   margin: 0;
   border: 0;
@@ -68,7 +71,8 @@ input[type="submit"]:hover {
 
 body {
   font-family: var(--font-roboto);
-  background-color: #212426;
+  height:50vh;
+  background: linear-gradient(0deg, rgb(38, 38, 38), rgb(11, 11, 11) 90%) no-repeat;
 }
 
 .app {
@@ -215,17 +219,7 @@ body {
 
 .movie div:nth-of-type(3) h3 {
   margin-top: 5px;
-  font-family: "Roboto Slab", serif;
   color: #f9d3b4;
-}
-
-.movie:hover div:nth-of-type(2) {
-  height: 100%;
-  opacity: 0.3;
-}
-
-.movie:hover div:nth-of-type(3) {
-  background-color: transparent;
 }
 
 .movie:hover div:nth-of-type(1) {
@@ -288,9 +282,12 @@ section{
 }
 
 .review-container {
-  padding: 20px;
-  margin-top: 50px;
-  margin-left: 50px;
+  width: 100%;
+  padding: 50px;
+  margin: 5px 0;
+  border: 3px solid #000000;
+  border-radius: 20px;
+  box-sizing: border-box;
   }
   .review-title {
   font-size: 24px;
@@ -339,6 +336,16 @@ section{
   font-size: 20px;
   margin-top: 60px;
   }
+
+
+.edit-profile-form{
+  width: 100%;
+  padding: 50px;
+  margin: 5px 0;
+  border: 3px solid #000000;
+  border-radius: 20px;
+  box-sizing: border-box;
+}
 /* ////////////////////// FONTS ////////////////////////// */
 @font-face {
   font-family: 'molot';
@@ -384,4 +391,10 @@ h2{
   color:#f0f0f0;
   position: relative;
   left: -30%;
+}
+
+h3{
+  font-size: 2rem;
+  color:#dedede;
+  position: relative;
 }
