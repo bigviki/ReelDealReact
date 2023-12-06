@@ -9,6 +9,9 @@ const MovieCard = ({movie}) => {
         navigate(path);
     }
 
+
+    
+
     return (
       
         <div className="movie">

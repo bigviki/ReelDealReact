@@ -42,7 +42,7 @@ const InfoCard = ({movie}) => {
                     ))}
                 </div> */}
         <section class="info">
-            <img class="info" src='sunset1.jpg' alt='movie poster'></img>
+            <img class="info" src='../assets/poster.png' alt='movie poster'></img>
             <section class="info-textbox">
                 {/* <h1>{movie.Title}</h1> */}
                 <h4 >Rating: (avg scores)/5</h4> 
@@ -54,7 +54,7 @@ const InfoCard = ({movie}) => {
         </section>
             <br></br><br></br>
         <section class="info" >
-            {/* <ReviewContainer /> */}
+            <ReviewContainer />
         </section>
         </>
     );
